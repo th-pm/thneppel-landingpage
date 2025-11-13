@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+}
+
+body {
+    container: page / inline-size;
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100cqw;
+}
+
+nav > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 100cqw;
+}
+
+.flex > * {
+    flex: 5 5;
+}
+
+.flex > h3 {
+    flex: 6 6;
+}
+
+#hero {
+    height: 110vh;
+}
+
+#hero > div {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+#hero h1 b {
+    display: block;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap; 
+    gap: 1em;
+    flex: 4 4;
+}
+
+#locations .tags {
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+#pictures {
+    display: grid;
+    grid: 1fr 1fr 1fr / 30cqw 30cqw 30cqw;
+}
+
+#v {
+    grid-column: 3;
+    grid-row: 1 / 4;
+}
+
+#h {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.carousel div {
+    display: flex;
+}
+
+#numbers {
+    display: flex;
+}
+
+#numbers > div{
+    flex: 1 1;
+}
+
+section {
+    padding: 0 4%;
+}
