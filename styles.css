@@ -191,16 +191,30 @@ img {
 
 .carousel {
     margin: 5rem 0;
+    overflow: hidden;
 }
 
-.carousel div {
-    gap: 10rem;
+.carousel > div {
+    display: flex;
+    gap: 8rem;
+    padding-right: 8rem;
+    margin: 3rem 0;
+    animation: scrolling 20s linear infinite;
 }
 
-.carousel div * {
-    width: 25rem;
-    margin-bottom: 20px;
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
+.carousel > div > img {
+    flex: 0 0 100%;
+    max-width: 15rem;
+}
+
 
 #experience {
     padding-top: 70px;

@@ -77,12 +77,6 @@ nav > div {
 
 .carousel {
     display: flex;
-    width: 100%;
-    overflow: auto;
-}
-
-.carousel div {
-    display: flex;
 }
 
 #numbers {
